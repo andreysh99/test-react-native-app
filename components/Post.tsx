@@ -45,6 +45,7 @@ const Post = ({ title, imgUrl, date }: IPost) => {
   return (
     <PostView>
       <PostImage
+        resizeMode='stretch'
         source={{
           uri: imgUrl,
         }}

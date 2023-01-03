@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { StatusBar, View } from 'react-native'
+import { StatusBar } from 'react-native'
 import HomeScreen from './screens/HomeScreen'
 import PostScreen from './screens/PostScreen'
 
@@ -27,6 +27,7 @@ export default function App() {
           options={{ title: 'Кино' }}
         />
       </Stack.Navigator>
+      <StatusBar />
     </NavigationContainer>
   )
 }

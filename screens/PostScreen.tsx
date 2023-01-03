@@ -8,12 +8,14 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack/lib/types
 import { StackParams } from '../App'
 
 const PostImage = styled.Image`
+  margin-top: 20px;
   width: 100%;
   height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
 `
 const PostText = styled.Text`
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
 `
@@ -44,7 +46,7 @@ const PostScreen = ({ route, navigation } : PropsRoute) => {
   }
 
   return (
-    <ScrollView style={{ padding: 20 }}>
+    <ScrollView style={{ paddingHorizontal: 20 }}>
       <PostImage
         source={{
           uri: post?.imgUrl,
